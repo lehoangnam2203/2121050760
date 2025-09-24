@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thông tin đơn hàng</title>
+</head>
+<body>
+  <script>
+    let thongTinDonHang = {
+            maDonHang: "12345678",
+            thongTinKhachHang: {
+                hoTen: "MinhHieu",
+                soDienThoai: "0987654321",
+                trangThaiThanhVienThanThiet: false,
+            },
+            danhSachSanPham: {
+                sp01: {
+                    maSanPham: "1",
+                    tenSanPham: "Matcha",
+                    soLuong: 10,
+                    giaTien: "10000",
+                },
+                sp02: {
+                    maSanPham: "2",
+                    tenSanPham: "Cà phê",
+                    soLuong: 10,
+                    giaTien: "20000",
+                },
+                sp03: {
+                    maSanPham: "3",
+                    tenSanPham: "Trà sữa",
+                    soLuong: 15,
+                    giaTien: "20000",
+                }
+            },
+            thanhToanThanhCong: true,
+            diaChiGiaoHang: "Đông Ngạc"
+        }
+        let tongSP1 = thongTinDonHang.danhSachSanPham.sp01.giaTien * thongTinDonHang.danhSachSanPham.sp01.soLuong;
+        let tongSP2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
+        let tongSP3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
+
+        let tongTien = tongSP1 + tongSP2 + tongSP3;
+
+    document.writeln("Tong tien don hang = " + tongTien);
+    document.writeln("do dai don hang la : " + thongTinDonHang.soDonHang.length);
+       var myString = "hello KieN";
+    //indexof tra ra vi tri xuat hien
+    //neu co : vi tri , neu k co thi tra ve  -1
+    document.writeln(myString.indexOf("e"));
+    // in cludes tra ra true hoac false
+    document.writeln(myString.includes("e"));
+    // tach chuoi thanh mang
+    document.writeln(myString.split('l')); 
+    // tach chuoi thanh mang
+    let danhsach = ["Le Van Nam", "Nguyen Van A", "Lo Thi Tam"]
+    document.writeln(danhsach[1].startsWith("Le"));
+    //chuyen doi ve so
+    let so = '123';
+    document.writeln(typeof (so));
+    document.writeln(typeof (Number(so)));
+    document.writeln(parseInt("10.5"));
+    var pi = 3.14159;
+     pi.toFixed(2);
+    document.writeln(isNaN(NaN));
+    document.writeln(isFinite(10));
+
+    //date
+    let today = new Date();
+    document.writeln(today.getFullYear());
+    document.writeln(today.getMonth());
+    document.writeln(today.getDate());
+    document.writeln(today.getHours());
+    document.writeln(today.getMinutes());
+    document.writeln(today.getSeconds());
+
+    </script>
+</body>
+
+</html>
