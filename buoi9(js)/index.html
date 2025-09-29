@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let today = new Date();
+
+        //mảng
+        //let arr = [1, 2, 3, 4, 5, 'a', 'b', 'c', 5, 6];
+       //document.writeln(arr[3]);
+       //document.writeln(arr.lastIndexOf(5));
+       //document.writeln(arr.indexOf(2));
+       //let a = "abc";
+       //document.writeln(Array.isArray(arr));
+       //let a, b, c, d;
+      // a = [1, 2, 3];
+      // b = "javaScript"
+      // c = [42, 'VBScript'];
+      // d = a.concat(b, c);
+       //d.push("Kien");
+       //document.writeln(d.join (" "));
+       //document.writeln(d.reverse());
+       //push(): thêm phân tử vào cuối mảng
+       // arr.push();
+       //pop(): xóa phần tử cuối cùng
+       //arr.pop();
+       //shift xóa phần tử đầu tiên
+       //arr.shift();
+       //unshift thêm phần tử vào đầu mảng
+       //arr.unshift();
+     //  d[3] = 4;
+     //  document.writeln(d);
+     let today = new Date();
+     let now = today.getHours();
+     if (now() < 10){
+        document.writeln('chao buoi sang');
+     } else if (now >= 10 && now <12){
+        document.writeln('chao buoi trua');
+
+     } else if (now >= 12 && now <17){
+        document.writeln('chao buoi chieu');
+     } else if (now >= 17 && now <22){
+        document.writeln('chao buoi toi');
+     } else {
+        document.writeln('chao buoi dem');
+     }
+
+
+    </script>
+</body>
+</html>
